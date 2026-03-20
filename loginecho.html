@@ -52,13 +52,13 @@
             background-color: #182385;
             color: white;
             border: none;
-            padding: 10px 20 px;
+            padding: 10px 20px;
             border-radius: 8px;
             cursor: pointer;
             font-size: 16px;
             display: block;
             margin: 15px auto;
-            transition: o.3s;
+            transition: 0.3s;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         button:hover{
@@ -66,12 +66,16 @@
             transform: scale(1.05);
         }
     </style>
-    <div class="login box">
-        <input type="text" id="usuario" placeholder="Usuario">
-        <input type="password" id="password" placeholder="Contraseña">
-        <button onclick="login()">Entrar</button>
-        <script src="Login en serio.js"></script>
+    <div class="login-box">
+        <form onsubmit="aceptar(); return false;">
+            <input type="text" id="login_user" placeholder="Usuario" required>
+            <input type="password" id="login_password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <script src="index.js"></script>
         <p class="mt-3 text-center">¿No tienes una cuenta? <a href="Registro.html">Regístrate aquí</a></p>
+
+        <a href="inicioyaecho.html">Volver al inicio</a>
     </div>
     </body>
-</html>
+</html> 
